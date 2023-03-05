@@ -1,0 +1,14 @@
+{
+  "name": "feed-app",
+  "version": "1.0.0",
+  "description": "Implementing search and sort of a feed, with pagination",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Abhishek Kumar",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
