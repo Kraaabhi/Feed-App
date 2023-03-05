@@ -1,6 +1,6 @@
-const FeedItem = require("../models/feedItems");
-const sequelize = require("../db/database");
-const feeds = require("../db/feedData.json");
+const FeedItem = require("../src/models/feedItems");
+const sequelize = require("../src/db/database");
+const feeds = require("../src/db/feedData.json");
 
 const seed = async () => {
   try {

@@ -8,7 +8,6 @@ exports.getFeed = async (
   pageNumber,
   pageSize
 ) => {
-  console.log("i came here");
   // Define the WHERE clause for the query
   const where = {};
 
