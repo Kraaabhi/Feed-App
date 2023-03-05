@@ -2,6 +2,7 @@ const feedService = require("../services/feedService");
 
 const getFeed = async (req, res, next) => {
   try {
+
     let {
       searchTerm = "",
       sortBy = "name",

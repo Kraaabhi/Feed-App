@@ -1,8 +1,4 @@
-const app = require("./app");
-const dotenv = require("dotenv");
- 
-
-dotenv.config({ path: "src/config/config.env" });
+const app = require("./app"); 
 const PORT = process.env.PORT;
 
 app.listen(PORT, () => {
