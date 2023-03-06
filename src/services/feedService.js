@@ -51,6 +51,7 @@ exports.getFeed = async (
 
   return {
     total: count,
+    page: pageNumber,
     feed: rows,
   };
 };

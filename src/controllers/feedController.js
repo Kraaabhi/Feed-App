@@ -9,7 +9,7 @@ const getFeed = async (req, res, next) => {
       sortOrder = "asc",
       page = 1,
       limit = 10,
-    } = req.body || {};
+    } = req.query || {};
     if (!["name", "dateLastEdited"].includes(sortBy)) {
       sortBy = "name";
     }
