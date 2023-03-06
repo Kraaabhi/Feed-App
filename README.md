@@ -39,9 +39,9 @@ This endpoint is used to retrieve feeds based on various search parameters. The 
 
 
 
-            searchTerm (optional): The search term to be used to search for feeds in the name and description fields. If no search term is provided, all                                    feeds are returned.
-            sortBy (optional): The field to sort the results by. Supported values are name and dateLastEdited. If no value is provided, the results are                                  sorted by name.
-            sortOrder (optional): The order to sort the results by. Supported values are asc and desc. If no value is provided, the results are sorted in                                   ascending order.
+            searchTerm (optional): The search term to be used to search for feeds in the name and description fields. If no search term is provided, all  feeds are returned.
+            sortBy (optional): The field to sort the results by. Supported values are name and dateLastEdited. If no value is provided, the results are sorted by name.
+            sortOrder (optional): The order to sort the results by. Supported values are asc and desc. If no value is provided, the results are sorted in ascending order.
             page (optional): The page number to retrieve. If no value is provided, the default value is 1.
             limit (optional): The maximum number of items to return per page. If no value is provided, the default value is 10.
 
