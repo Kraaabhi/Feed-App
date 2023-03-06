@@ -6,11 +6,11 @@ Features:
 
 
 
-    => Search in fields name and description.
-    => Support exact match when the query contains a phrase within double quotes.
-    => Allow sorting by name and dateLastEdited.
-    => Use 'page numbers' style of pagination.
-    => Include total count in the response matching the current query result.
+    => Searches in fields name and description.
+    => Supports exact match when the query contains a phrase within double quotes.
+    => Allows sorting by name and dateLastEdited.
+    => Uses 'page numbers' style of pagination.
+    => Included total count in the response matching the current query result.
 
 
 Getting Started:
