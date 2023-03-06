@@ -19,7 +19,7 @@ describe('Feed API', () => {
       expect(res.body).toHaveProperty('feed');
       expect(res.body).toHaveProperty('page');
       expect(res.body.feed.length).toBeGreaterThan(0);
-      expect(res.body.feed[0].name.toLowerCase()).toContain('the lion king');
+      expect(res.body.feed[0].description.toLowerCase()).toContain('laboriosam occaecati modi sit voluptatem. quis harum rerum similique at. the lion king. et porro eum quia eligendi doloribus aut. tenetur provident maxime quod illum vitae excepturi. nemo ipsum non.');
     });
 
     it('should support exact match when search term is enclosed in double quotes', async () => {
@@ -28,8 +28,8 @@ describe('Feed API', () => {
       expect(res.body).toHaveProperty('total');
       expect(res.body).toHaveProperty('feed');
       expect(res.body).toHaveProperty('page');
-      expect(res.body.total).toBe(1);
-      expect(res.body.feed[0].name.toLowerCase()).toEqual('the lord of the rings: the return of the king');
+      expect(res.body.total).toBe(2);
+      expect(res.body.feed[0].description.toLowerCase()).toEqual('vitae dolor natus aut aut. totam dolor porro. rem est repellendus voluptas eos soluta. the lord of the rings: the return of the king');
     });
 
     it('should allow sorting by name', async () => {
@@ -39,7 +39,7 @@ describe('Feed API', () => {
       expect(res.body).toHaveProperty('feed');
       expect(res.body).toHaveProperty('page');
       expect(res.body.feed.length).toBeGreaterThan(0);
-      expect(res.body.feed[0].name.toLowerCase()).toEqual('the lion king');
+      expect(res.body.feed[0].name.toLowerCase()).toEqual('central creative producer');
     });
 
     it('should allow sorting by dateLastEdited', async () => {
@@ -49,7 +49,7 @@ describe('Feed API', () => {
       expect(res.body).toHaveProperty('feed');
       expect(res.body).toHaveProperty('page');
       expect(res.body.feed.length).toBeGreaterThan(0);
-      expect(res.body.feed[0].name.toLowerCase()).toEqual('the lord of the rings: the return of the king');
+      expect(res.body.feed[0].name.toLowerCase()).toEqual('regional marketing developer');
     });
     it('should return first page if   no page no  is provided', async () => {
         const res = await request(app).get('/api/feed');
